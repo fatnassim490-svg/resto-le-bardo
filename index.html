@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Bardo Restaurant (مطعم الباردو) — Restaurant gastronomique à Sidi M'Hamed</title>
+<meta name="description" content="Le Bardo Restaurant, restaurant intimiste et raffiné, 135 Rue Didouche Mourad, Sidi M'Hamed 16000. Cuisine bistronomique, cocktails signatures, terrasse cosy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#121212] text-[#F5F0E6]">
+
+<!-- Header / Navigation -->
+<header class="fixed w-full z-50 bg-[#121212]/90 backdrop-blur-sm border-b border-[#A68966]/15">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-20">
+    <a href="index.html" class="font-serif-title text-2xl md:text-3xl tracking-wide text-[#A68966]">Le Bardo</a>
+    <nav class="hidden md:flex items-center gap-9 text-sm uppercase tracking-widest">
+      <a href="index.html" class="text-[#A68966]">Accueil</a>
+      <a href="carte.html" class="hover:text-[#A68966] transition">La Carte</a>
+    </nav>
+    <a href="reservation.html" class="hidden md:inline-block btn-gold px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider">Réserver une table</a>
+    <button id="burger-btn" class="md:hidden flex flex-col gap-1.5 w-8" aria-label="Menu">
+      <span class="burger-line w-full h-0.5 bg-[#F5F0E6]"></span>
+      <span class="burger-line w-full h-0.5 bg-[#F5F0E6]"></span>
+      <span class="burger-line w-full h-0.5 bg-[#F5F0E6]"></span>
+    </button>
+  </div>
+  <div id="menu-mobile" class="md:hidden bg-[#121212] border-t border-[#A68966]/15 px-6">
+    <nav class="flex flex-col gap-5 py-6 text-sm uppercase tracking-widest">
+      <a href="index.html" class="text-[#A68966]">Accueil</a>
+      <a href="carte.html">La Carte</a>
+      <a href="reservation.html">Réserver &amp; Contact</a>
+      <a href="reservation.html" class="btn-gold px-6 py-2.5 rounded-full text-center font-semibold">Réserver une table</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Section Hero -->
+<section class="hero-bg min-h-screen flex items-center pt-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="font-serif-elegant italic text-[#A68966] text-lg mb-5 tracking-wide">Sidi M'Hamed · Rue Didouche Mourad</p>
+    <h1 class="font-serif-title text-4xl sm:text-5xl md:text-6xl leading-tight mb-6">Une expérience culinaire d'exception au cœur d'Alger.</h1>
+    <p class="text-base md:text-lg text-[#F5F0E6]/80 max-w-2xl mx-auto mb-10 leading-relaxed">Installez-vous dans notre cadre intimiste, 135 Rue Didouche Mourad, Sidi M'Hamed, et laissez-vous séduire par notre cuisine raffinée, nos cocktails signatures et nos options végétaliennes.</p>
+    <div class="flex justify-center">
+      <a href="carte.html" class="btn-gold px-8 py-3.5 rounded-full text-sm font-semibold uppercase tracking-wider w-full sm:w-auto text-center">Découvrir la carte</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section Introduction -->
+<section class="py-20 md:py-28 px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="font-serif-elegant italic text-[#A68966] tracking-widest text-sm mb-4 uppercase">Bienvenue au Bardo</p>
+    <h2 class="font-serif-title text-3xl md:text-4xl gold-underline pb-6 mb-8">L'art de recevoir, à l'algéroise</h2>
+    <p class="text-[#F5F0E6]/80 leading-relaxed mb-6">Dès le seuil franchi, Le Bardo vous accueille dans une atmosphère feutrée où chaque lumière tamisée, chaque texture et chaque parfum a été pensé pour vous. Notre équipe vous reçoit avec un service attentif et personnalisé, à l'image d'une maison qui vous connaît déjà.</p>
+    <p class="text-[#F5F0E6]/80 leading-relaxed">Aux beaux jours, notre élégante terrasse extérieure s'anime dès la tombée du jour : un cadre suspendu entre la fébrilité de la ville et la douceur d'une soirée algéroise, verre en main, sous nos guirlandes de lumières chaudes.</p>
+  </div>
+</section>
+
+<!-- Section Coups de Cœur du Chef -->
+<section class="py-20 md:py-28 px-6 bg-[#1a1a1a]">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="font-serif-elegant italic text-[#A68966] tracking-widest text-sm mb-4 uppercase">Signatures de la maison</p>
+      <h2 class="font-serif-title text-3xl md:text-4xl gold-underline pb-6">Les Coups de Cœur du Chef</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Plat 1 -->
+      <div class="dish-card bg-[#1e1e1e] rounded-xl overflow-hidden border border-[#A68966]/10">
+        <div class="aspect-[4/5] overflow-hidden">
+          <img src="plat-1.jpg" alt="Assiette de mezzés BARDO" class="w-full h-full object-cover">
+        </div>
+      </div>
+      <!-- Plat 2 -->
+      <div class="dish-card bg-[#1e1e1e] rounded-xl overflow-hidden border border-[#A68966]/10">
+        <div class="aspect-[4/5] overflow-hidden">
+          <img src="plat-2.jpg" alt="Agneau confit du Bardo" class="w-full h-full object-cover">
+        </div>
+      </div>
+      <!-- Plat 3 -->
+      <div class="dish-card bg-[#1e1e1e] rounded-xl overflow-hidden border border-[#A68966]/10">
+        <div class="aspect-[4/5] overflow-hidden">
+          <img src="plat-3.jpg" alt="Cocktail signature Bardo Sunset" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Témoignages -->
+<section class="py-20 md:py-28 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <p class="font-serif-elegant italic text-[#A68966] tracking-widest text-sm mb-4 uppercase">Ils ont aimé</p>
+    <h2 class="font-serif-title text-3xl md:text-4xl mb-4">Ce que disent nos convives</h2>
+    <div class="flex items-center justify-center gap-2 mb-14">
+      <span class="star-rating text-xl" role="img" aria-label="Note de 4,5 sur 5 étoiles">
+        <span class="star-rating-back tracking-widest">★★★★★</span>
+        <span class="star-rating-front star-gold tracking-widest" style="width:90%;">★★★★★</span>
+      </span>
+      <span class="text-[#F5F0E6]/80 text-sm">4.5/5 sur Google — plus de 400 avis</span>
+    </div>
+
+    <!-- Slider mobile / Grille 2x3 desktop -->
+    <div class="testimonial-scroll flex md:grid md:grid-cols-3 md:grid-rows-2 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory text-left pb-4 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0">
+
+      <div class="testimonial-card shrink-0 w-[82%] sm:w-[60%] md:w-auto snap-start bg-[#1e1e1e] p-7 rounded-xl border border-[#A68966]/10">
+        <p class="star-gold text-sm mb-4">★★★★★</p>
+        <p class="text-sm text-[#F5F0E6]/80 leading-relaxed mb-5">Une expérience gastronomique remarquable dans un cadre idéal pour les familles. La cuisine est raffinée et savoureuse, le service est aux petits soins et l'ambiance, à la fois chic et décontractée.</p>
+        <p class="font-serif-elegant text-[#A68966]">— Nordin N.</p>
+      </div>
+
+      <div class="testimonial-card shrink-0 w-[82%] sm:w-[60%] md:w-auto snap-start bg-[#1e1e1e] p-7 rounded-xl border border-[#A68966]/10">
+        <p class="star-gold text-sm mb-4">★★★★★</p>
+        <p class="text-sm text-[#F5F0E6]/80 leading-relaxed mb-5">La cuisine est parfaite et raffinée. Nous avons pris des crevettes à l'ail et à la sauce rouge et une Rechta, c'était délicieux. On a fini par un thé et un café gourmand avec pâtisseries délicieuses.</p>
+        <p class="font-serif-elegant text-[#A68966]">— Dj BO</p>
+      </div>
+
+      <div class="testimonial-card shrink-0 w-[82%] sm:w-[60%] md:w-auto snap-start bg-[#1e1e1e] p-7 rounded-xl border border-[#A68966]/10">
+        <p class="star-gold text-sm mb-4">★★★★★</p>
+        <p class="text-sm text-[#F5F0E6]/80 leading-relaxed mb-5">Service irréprochable, les plats succulents, personnel aux petits soins et une ambiance chaleureuse... je recommande ce restaurant si vous êtes de passage à Alger.</p>
+        <p class="font-serif-elegant text-[#A68966]">— Farah S.</p>
+      </div>
+
+      <div class="testimonial-card shrink-0 w-[82%] sm:w-[60%] md:w-auto snap-start bg-[#1e1e1e] p-7 rounded-xl border border-[#A68966]/10">
+        <p class="star-gold text-sm mb-4">★★★★★</p>
+        <p class="text-sm text-[#F5F0E6]/80 leading-relaxed mb-5">Une cuisine exquise, un personnel attentionné et une ambiance feutrée. Un immense merci au Chef pour la délicatesse de ses plats. C'était un chef d'œuvre pour les papilles.</p>
+        <p class="font-serif-elegant text-[#A68966]">— Nadia B.</p>
+      </div>
+
+      <div class="testimonial-card shrink-0 w-[82%] sm:w-[60%] md:w-auto snap-start bg-[#1e1e1e] p-7 rounded-xl border border-[#A68966]/10">
+        <p class="star-gold text-sm mb-4">★★★★★</p>
+        <p class="text-sm text-[#F5F0E6]/80 leading-relaxed mb-5">Merveilleuse soirée au Bardo. Les plats sont absolument délicieux et le service est impeccable. Nous reviendrons si nous repassons par Alger !</p>
+        <p class="font-serif-elegant text-[#A68966]">— Lisa R.</p>
+      </div>
+
+      <div class="testimonial-card shrink-0 w-[82%] sm:w-[60%] md:w-auto snap-start bg-[#1e1e1e] p-7 rounded-xl border border-[#A68966]/10">
+        <p class="star-gold text-sm mb-4">★★★★★</p>
+        <p class="text-sm text-[#F5F0E6]/80 leading-relaxed mb-5">Excellent restaurant avec un accueil chaleureux, service rapide, personnel souriant et gentil. Le menu est varié entre traditionnel et moderne, vos papilles n'en seront que ravies.</p>
+        <p class="font-serif-elegant text-[#A68966]">— Lili D.</p>
+      </div>
+
+    </div>
+    <p class="md:hidden text-xs text-[#F5F0E6]/40 mt-4">← Faites glisser pour voir plus d'avis →</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-[#A68966]/15 py-14 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div>
+      <p class="font-serif-title text-2xl text-[#A68966] mb-4">Le Bardo</p>
+      <p class="text-sm text-[#F5F0E6]/70 leading-relaxed">135 Rue Didouche Mourad<br>Sidi M'Hamed 16000</p>
+      <a href="tel:+213770502498" class="inline-block mt-3 text-sm text-[#F5F0E6]/70 hover:text-[#A68966] transition">0770 50 24 98</a>
+    </div>
+    <div>
+      <p class="font-serif-title text-lg mb-4">Horaires</p>
+      <p class="text-sm text-[#F5F0E6]/70 leading-relaxed">Déjeuner : 12h00 – 14h30<br>Dîner : 19h00 – 22h30<br>Ouvert tous les jours</p>
+    </div>
+    <div>
+      <p class="font-serif-title text-lg mb-4">Suivez-nous</p>
+      <div class="flex gap-4 text-[#F5F0E6]/70">
+        <a href="#" aria-label="Instagram" class="hover:text-[#A68966] transition">Instagram</a>
+        <a href="#" aria-label="Facebook" class="hover:text-[#A68966] transition">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-[#A68966]/10 text-center text-xs text-[#F5F0E6]/40">
+    © 2026 Le Bardo. Tous droits réservés.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
